@@ -1,0 +1,41 @@
+[ 용어 정리 ]
+
+Git 
+: 소스코드를 효과적으로 관리하기 위해 개발된 분산형 버전 관리 시스템
+: 형상 관리 도구
+: 협업 도구
+: 소스 코드 변경 이력 확인
+
+Git : 혼자 작업한 코드 저장
+    : 로컬(내 컴퓨터 환경)에서 관리되는 버전 관리 시스템
+    : 소스코드 수정에 따른 버전을 관리해주는 시스템
+    
+Github : Git에 저장한 코드를 다른 사람과 공유하는 플랫폼
+       : 클라우드 방식으로 관리되는 버전 관리 시스템
+       : 자체 구축이 아닌 빌려 쓰는 클라우드 개념
+Fetch : 가져오다, 원격저장소의 코드를 로컬 저장소로 가져오다
+Merge : 새로 가져온 코드를 기존의 코드와 비교하여 합침
+pull = fetch + merge 
+clone = pull + git remote add [레포주소.git]
+       
+[명령어 정리]
+
+cd [내 로컬저장소 주소]  -> 로컬 저장소 위치 지정
+echo "# practice" >> README.md  -> ""안의 내용을 README.md파일에 작성
+git init  -> git 초기화
+git add README.md  -> readme 파일 추가
+git commit -m "first commit" -> commit 달기
+git remote add origin [내 원격저장소 주소] -> 원격 저장소에 연결
+git push -u origin main  -> push 해주기(github에 파일을 추가하거나 변경)
+git add . -> 다음 commit을 기록할 때까지 변경분을 모아놓기 위해 사용
+git clone [원격 레포지토리 주소.git]  : 원격 저장소의 코드를 자신의 로컬 저장소로 복제해옴
+git branch [새로운 브랜치 이름] : 새로운 브랜치 만들기
+git branch : 로컬 브랜치 목록 조회
+git branch -r : 원격 브랜치 목록 조회얐
+git branch -a : 로컬 + 원격 브랜치 목록 조회
+git branch -M main -> main 브랜치 생성
+git branch -d [삭제할 브랜치 이름] : 브랜치 삭제
+git checkout [이동할 브랜치 이름] : 현재 브랜치에서 다른 브랜치로 이동 
+git remote add upstream [레포주소.git] : 동기화할 레포를 upstream이라고 지정
+git remote -v : 연결되어있는 원격 저장소 목록 확인
+git pull upstream main(=가져올 브랜치 이름) : 현재 로컬 브랜치로 내용 가져오기
