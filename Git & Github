@@ -39,3 +39,6 @@ git checkout [이동할 브랜치 이름] : 현재 브랜치에서 다른 브랜
 git remote add upstream [레포주소.git] : 동기화할 레포를 upstream이라고 지정
 git remote -v : 연결되어있는 원격 저장소 목록 확인
 git pull upstream main(=가져올 브랜치 이름) : 현재 로컬 브랜치로 내용 가져오기
+git merge [가져올 브랜치이름] : 현재 브랜치로 내용 합치기
+git remote remove [브랜치이름] : 현재의 원격저장소 지우기
+
