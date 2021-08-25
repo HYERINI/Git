@@ -6,4 +6,4 @@ non-fast-forward : 원격 저장소의 master 브랜치가 로컬 저장소의 �
 
 >>git pull origin master
 -- fatal: refusing to merge unrelated histories 
-👉 원격저장소의 master 브랜치에서 로컬 저장소의 FETCH_HEAD를 merge하는 것이 거부되었다는 오류
+👉 원격저장소의 master 브랜치에서 로컬 저장소의 FETCH_HEAD를 merge하는 것이 거부되었다.
