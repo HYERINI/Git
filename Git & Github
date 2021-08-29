@@ -18,7 +18,7 @@ Merge : 새로 가져온 코드를 기존의 코드와 비교하여 합침
 pull = fetch + merge 
 clone = pull + git remote add [레포주소.git]
        
-[명령어 정리]
+[[[ 명령어 정리 ]]]
 
 cd [내 로컬저장소 주소]  -> 로컬 저장소 위치 지정
 echo "# practice" >> README.md  -> ""안의 내용을 README.md파일에 작성
